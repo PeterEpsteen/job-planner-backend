@@ -261,16 +261,6 @@
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/frontend/pom.xml">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="391">
-                      <caret line="22" column="6" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
               <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/pom.xml">
                   <provider selected="true" editor-type-id="text-editor">
@@ -413,37 +403,6 @@
               <item name="jobplanner" type="b2602c69:ProjectViewProjectNode" />
               <item name="jobplanner" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobplanner" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobplanner" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobplanner" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobplanner" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobplanner" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobplanner" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
