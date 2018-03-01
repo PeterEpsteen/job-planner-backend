@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/jobs")
+@CrossOrigin(origins = "http://localhost:4200")
 public class JobController {
     @Autowired
     JobRepository jobRepository;
@@ -18,6 +19,7 @@ public class JobController {
 
     @GetMapping("/{user_id}")
     public @ResponseBody Iterable<Job> getJobsByUser(@PathVariable("user_id") long id) {
+        //check if no user
         User user = userRepository.findById(id);
         return jobRepository.findByUser(user);
     }
