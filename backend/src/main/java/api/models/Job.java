@@ -34,7 +34,37 @@ public class Job implements Serializable {
     @OneToMany(mappedBy = "job", cascade = CascadeType.ALL)
     private Set<Todo> todos;
 
+    private boolean applied;
+
+    private boolean interviewed;
+
+    private boolean jobOffer;
+
     public Job() {}
+
+    public boolean isApplied() {
+        return applied;
+    }
+
+    public void setApplied(boolean applied) {
+        this.applied = applied;
+    }
+
+    public boolean isInterviewed() {
+        return interviewed;
+    }
+
+    public void setInterviewed(boolean interviewed) {
+        this.interviewed = interviewed;
+    }
+
+    public boolean isJobOffer() {
+        return jobOffer;
+    }
+
+    public void setJobOffer(boolean jobOffer) {
+        this.jobOffer = jobOffer;
+    }
 
     public Long getId() {
         return id;

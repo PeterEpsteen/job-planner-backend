@@ -11,6 +11,7 @@ public class Event implements Serializable {
 
     @NotNull
     private String title;
+    private String description;
     @NotNull
     private String date;
 
@@ -50,5 +51,13 @@ public class Event implements Serializable {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
