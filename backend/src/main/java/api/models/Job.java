@@ -21,6 +21,8 @@ public class Job implements Serializable {
 
     private String description;
 
+    private String companyDomain;
+
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
@@ -41,6 +43,14 @@ public class Job implements Serializable {
     private boolean jobOffer;
 
     public Job() {}
+
+    public String getCompanyDomain() {
+        return companyDomain;
+    }
+
+    public void setCompanyDomain(String companyDomain) {
+        this.companyDomain = companyDomain;
+    }
 
     public boolean isApplied() {
         return applied;

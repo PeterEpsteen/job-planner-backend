@@ -1,5 +1,8 @@
 package api.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
@@ -12,6 +15,7 @@ public class Todo implements Serializable {
     @NotNull
     private String title;
     private String date;
+    private String description;
     private String complete;
     @ManyToOne
     @JoinColumn(name = "job_id")
@@ -19,6 +23,13 @@ public class Todo implements Serializable {
 
     public Todo() {}
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
     public String getComplete() {
         return complete;
@@ -52,11 +63,11 @@ public class Todo implements Serializable {
         this.date = date;
     }
 
-
+    @JsonIgnore
     public Job getJob() {
         return job;
     }
-
+    @JsonProperty
     public void setJob(Job job) {
         this.job = job;
     }
