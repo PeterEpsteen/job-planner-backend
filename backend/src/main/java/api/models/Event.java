@@ -1,5 +1,8 @@
 package api.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
@@ -36,11 +39,11 @@ public class Event implements Serializable {
     public void setDate(String date) {
         this.date = date;
     }
-
+    @JsonIgnore
     public Job getJob() {
         return job;
     }
-
+    @JsonProperty
     public void setJob(Job job) {
         this.job = job;
     }

@@ -1,5 +1,8 @@
 package api.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
@@ -23,11 +26,11 @@ public class JobContact implements Serializable {
     private String phone;
 
     public JobContact(){}
-
+    @JsonIgnore
     public Job getJob() {
         return job;
     }
-
+    @JsonProperty
     public void setJob(Job job) {
         this.job = job;
     }
