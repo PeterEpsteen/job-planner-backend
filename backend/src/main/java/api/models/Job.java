@@ -9,6 +9,7 @@ import java.io.Serializable;
 import java.util.Set;
 
 @Entity
+@Table(name = "job")
 public class Job implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -42,7 +43,27 @@ public class Job implements Serializable {
 
     private boolean jobOffer;
 
+    private String location;
+
+    private String dateAdded;
+
     public Job() {}
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getDateAdded() {
+        return dateAdded;
+    }
+
+    public void setDateAdded(String dateAdded) {
+        this.dateAdded = dateAdded;
+    }
 
     public String getCompanyDomain() {
         return companyDomain;

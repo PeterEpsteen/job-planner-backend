@@ -1,6 +1,7 @@
 package api.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.annotations.CollectionId;
 
 import javax.persistence.*;
@@ -86,11 +87,11 @@ public class User implements Serializable{
     public void setUsername(String username) {
         this.username = username;
     }
-
+    @JsonIgnore
     public String getPassword() {
         return password;
     }
-
+    @JsonProperty
     public void setPassword(String password) {
         this.password = password;
     }
